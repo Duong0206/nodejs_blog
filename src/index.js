@@ -19,7 +19,7 @@ app.use(    express.static(path.join(__dirname, 'public')));
         extname: '.hbs',
     }),
 );
-app.set('view engine', 'hbs');
+        app.set('view engine', 'hbs');
 
 // cấu hình thư mục chứa view
 // app.set('views', './views');
@@ -29,6 +29,6 @@ app.set('views', path.join(__dirname, 'resource/views'));
 route(app);
 
 // lắng nghe cổng 3002
-                    app.listen(port, () =>
+                                app.listen(port, () =>
                         console.log(`Example app listening at http://localhost:${port}`),
                     );
