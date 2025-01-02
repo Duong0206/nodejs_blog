@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
         app.use(morgan('combined'));
 
 //template engine
-            app.engine(
+                        app.engine(
     'hbs',
     engine({
         extname: '.hbs',
@@ -29,6 +29,6 @@ app.set('views', path.join(__dirname, 'resource/views'));
 route(app);
 
 // lắng nghe cổng 3002
-app.listen(port, () =>
-    console.log(`Example app listening at http://localhost:${port}`),
-);
+                    app.listen(port, () =>
+                        console.log(`Example app listening at http://localhost:${port}`),
+                    );

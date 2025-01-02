@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "beautiful": "lint-staged",
     "start": "nodemon src/index.js",
     "watch": "node-sass src/resource/scss/ --output src/public/css/ --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,8 +24,12 @@
   "homepage": "https://github.com/Duong0206/nodejs_blog#readme",
   "description": "",
   "lint-staged": {
-    "src/**/*.{js,json,scss}":
-      "prettier --single-quote --traling-comma all --tab-width 4 --write"
+    "src/**/*.{js,json,scss}": "prettier --single-quote --traling-comma all --tab-width 4 --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
     "express": "^4.21.2",
