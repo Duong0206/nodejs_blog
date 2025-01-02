@@ -1,6 +1,4 @@
 class SiteController {
-
-
     //Get /neww
     index(req, res) {
         res.render('home');
@@ -9,11 +7,6 @@ class SiteController {
     search(req, res) {
         res.send('search');
     }
-
-
-
-
 }
 
-module.exports = new SiteController;
-
+module.exports = new SiteController();
