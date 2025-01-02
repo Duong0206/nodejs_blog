@@ -7,10 +7,10 @@ const path = require('path');
 
 const route = require('./routes');
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(    express.static(path.join(__dirname, 'public')));
 
 //http logger
-        app.use(morgan('combined'));
+        app.use(        morgan('combined'));
 
 //template engine
                         app.engine(
