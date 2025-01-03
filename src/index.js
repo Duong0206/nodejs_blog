@@ -28,7 +28,6 @@ app.engine(
 app.set('view engine', 'hbs');
 
 // cấu hình thư mục chứa view
-// app.set('views', './views');
 app.set('views', path.join(__dirname, 'resource/views'));
 
 //routes init
